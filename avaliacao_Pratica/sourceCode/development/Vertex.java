@@ -13,6 +13,12 @@ public class Vertex implements Comparable<Vertex> {
         this.edges = new ArrayList<>();
     }
 
+    /// drikstra
+    public void addNeighbour(Edge edge) {
+        this.edges.add(edge);
+    }
+
+    ///
     public void addAdge(Edge edge) {
         this.edges.add(edge);
     }
