@@ -9,6 +9,8 @@ public class Edge {
         this.targetVertex = targetVertex;
     }
 
+
+
     public double getWeight() {
         return weight;
     }

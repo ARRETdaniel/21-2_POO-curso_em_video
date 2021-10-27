@@ -15,18 +15,10 @@ public class App {
         v1.addNeighbour(new Edge(10, v1, v2));
 
         v1.addNeighbour(new Edge(1, v1, v3));
-        v1.addNeighbour(new Edge(100, v1, v4));
 
-        v4.addNeighbour(new Edge(1, v4, v3));
-
-        v3.addNeighbour(new Edge(1, v3, v4));
-        v2.addNeighbour(new Edge(1, v2, v3));
-        v2.addNeighbour(new Edge(1, v2, v4));
-
-        Dijkstra dijkstra = new Dijkstra();
-        dijkstra.computePath(v1);
-
-        System.out.println(dijkstra.getShortestPathTo(v4));
+        Algorithms dijkstra = new Algorithms();
+        dijkstra.Dijkstra(v1);
+        System.out.println(dijkstra.getShortestPathTo(v2));
         // --------------------->>>>BellmanFord<<<<<<<<<------------------------------------------
         List<Vertex> vertexList = new ArrayList<>();
 
@@ -42,9 +34,10 @@ public class App {
         edgeList.add(new Edge(1, vertexList.get(2), vertexList.get(3)));
         edgeList.add(new Edge(10, vertexList.get(0), vertexList.get(3)));
 
-        BellmanFord algorithm = new BellmanFord(edgeList, vertexList);
-        algorithm.shotestPath(vertexList.get(0), vertexList.get(3));
-
+        Algorithms BellmanFord = new Algorithms();
+        BellmanFord.BellmanFord(edgeList, vertexList);
+        // PathTo PathTo2 = new PathTo();
+        BellmanFord.getShortestPathTo(vertexList.get(0), vertexList.get(3));
 
     }
 }
