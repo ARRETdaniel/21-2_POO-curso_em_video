@@ -13,7 +13,7 @@ public class Caneta {
 
   }
 
-  
+
 
   public String getModelo() {
   return this.modelo;
@@ -69,4 +69,12 @@ public class Caneta {
    *
    * private void destampar() { this.tampada = false; }
    */
+}
+
+public class Caneta {
+  //variaveis
+  //Metodos
+  //set and get
+  //contructor
+  //...
 }
